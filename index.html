@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="./KumbhSans-VariableFont_wght.ttf">
+    <title>FAQ</title>
+</head>
+<body>
+    <main>
+      <figure class="wom"> <!-- si voy envolver una tag la class debe ir en la envoltura para que agarre el codigo-->
+        <img src="images/illustration-woman-online-desktop.svg " alt="desktop" class="desktop">
+        <img src="images/illustration-woman-online-mobile.svg" alt="mobile" class="mobile">
+      </figure> <!--pongo una imagen deskop y otra mobile aqui para display una y otra no dependiendo de la screen-->
+      <figure class="box">
+        <img src="images/illustration-box-desktop.svg " alt="box" >
+      </figure> 
+      <section class="text">
+        <h1>FAQ</h1>
+        <div class="question">
+            <a>How many team members can I invite?
+            <svg class="arrow"  width="10" height="7" xmlns="http://www.w3.org/2000/svg "><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg >
+            </a> 
+        </div>
+          <div class="question" id="arrow" onclick="show()" onmouseleave="showoff()">
+             <a id="que">What is the maximum file upload size
+             <svg id="svg" class="arrow" width="10" height="7" xmlns="http://www.w3.org/2000/svg "><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg >
+            </a> 
+            <div id="answer" class="answer" style="display: none;">
+              <p >No more than 2GB. All file in your account must fit your allotted storage space</p>
+            </div>
+        </div> 
+        <div class="question">
+               <a>How do i reset my password?</a> 
+               <svg class="arrow"  width="10" height="7" xmlns="http://www.w3.org/2000/svg "><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg >
+        </div>
+        <div class="question">
+               <a>Can i cancel my subscription?</a> 
+               <svg class="arrow"  width="10" height="7" xmlns="http://www.w3.org/2000/svg "><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg >
+        </div>
+        <div class="question">
+               <a>Do you provide additional support?</a> 
+               <svg class="arrow"  width="10" height="7" xmlns="http://www.w3.org/2000/svg "><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg >
+        </div>
+      </section>
+    </main>
+    <script src="./faq.js" > </script>
+</body>
+</html>

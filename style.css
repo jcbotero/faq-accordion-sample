@@ -1,0 +1,190 @@
+body {
+
+    padding-left: 0px;
+    margin: 0px;
+    max-width: 1440px;
+    background: linear-gradient( hsl(273, 75%, 66% ), hsl(240, 73%, 65%));
+    font-family: "Kumbh";
+    
+}
+
+
+@font-face {
+    font-family: "Kumbh";
+    src: url("./KumbhSans-VariableFont_wght.ttf");
+}
+
+main {
+    display:flex;
+    background: white;
+    margin: 150px 100px 150px 250px;
+    max-width: 900px ;
+    height: 560px;
+   overflow: hidden; /* no olvidar... iba a colocar el overflow en la imagen pero debia hacerlo aqui que es el div que la contiene */
+   border-radius: 20px;
+    padding-right: 40px;
+} 
+
+
+
+ .wom .desktop {
+    position: relative;
+    padding: 50px 5px 100px 0px;
+    margin-left: -25%;  /* en vez de left o top uso margin negativo.. mas responsive*/
+}
+
+
+.wom .mobile {
+   display: none;
+}  
+
+
+main .box{
+    position: absolute;
+    left: 120px;
+    top: 340px;
+}
+
+
+.text {
+    display: inline-block;
+    padding: 40px 10px 100px 0px;
+    cursor: url("./pointer.png"), auto;
+    color: hsl(237, 12%, 33%);
+    margin-right: 50px;
+}
+
+
+.text h1 {
+    padding-bottom: 15px ;
+    font-size: 30px;
+    font-weight: bolder;
+    color: hsl(238, 29%, 16%);
+    
+}
+
+
+.text .question {
+    padding-bottom: 15px;
+    margin-bottom: 25px ;
+    border-bottom: 1px solid rgb(218, 215, 215); /* asi le pongo diseño al bottom del div para el faq */
+}
+
+
+
+
+.text .question:hover {
+   color: hsl(14, 88%, 65%);
+}
+
+
+ .arrow {
+    float: right;
+    padding-left: 70px;
+    padding-top: 5px;
+}
+
+
+.text .answer {
+    font-size: 15px;
+    color: hsl(240, 6%, 50%);
+}
+
+
+
+@media (max-width: 600px ) {
+    body {
+        padding-left: 0px;
+        margin: 0px;
+        width: 375px;
+    }
+    
+    
+    main {
+        display: inline-block;
+        background: white;
+        margin: 135px 20px 150px 20px;
+        width: 310px ;
+        height: 580px;
+       overflow: visible; /* no olvidar... iba a colocar el overflow en la imagen pero debia hacerlo aqui que es el div que la contiene */
+       border-radius: 20px;
+       padding-right: 0px;
+    } 
+    
+    
+
+  .wom .desktop {
+        display: none;
+      }
+
+
+   .wom .mobile {
+        display:flex;
+        position: absolute;
+        width: 250px;
+         top: 20px;
+        left: 50px;   
+        filter: drop-shadow(1px 25px 1px rgba(204, 203, 203, 0.4)); /* asi añado sombra sombre un svg no sé sobre otras imágenes*/
+   }
+
+
+    main .box{
+       display: none;
+    }
+    
+    
+    .text {
+        display: inline-block;
+        padding: 80px 5px 100px 20px;
+        cursor: url("./pointer.png"), auto;
+        color: hsl(237, 12%, 33%);
+        text-align: left;
+        width: 280px;
+        font-weight: 400;
+    }
+    
+    
+    .text h1 {
+        padding-bottom: 15px ;
+        font-size: 32px;
+        font-weight: bolder;
+        color: hsl(238, 29%, 16%);
+        text-align: center;
+       
+        
+    }
+    
+    
+    .text .question {
+        padding-bottom: 15px;
+        margin-bottom: 25px ;
+        border-bottom: 1px solid rgb(218, 215, 215); /* asi le pongo diseño al bottom del div para el faq */
+        font-size: 14px;
+    }
+    
+    
+    .text .question:hover {
+       color: hsl(14, 88%, 65%);
+    }
+    
+    
+     .arrow {
+       
+        position:relative;
+        margin-top: 1%;
+        display: inline-block;
+        padding-left: 0px;
+        margin-left: 0px;
+       
+    }
+    
+    
+    .text .answer {
+        font-size: 13px;
+        color: hsl(240, 6%, 50%);
+
+    }
+    
+
+
+}
